@@ -1,0 +1,239 @@
+/*corpo da página*/
+* {
+    box-sizing: border-box;
+}
+
+/*body da página*/
+body {
+    margin: 0;
+    background:#333333;
+    
+}
+
+/*cabeçalho da página*/
+.cabecalho {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    /*margin: 0 0 0 67px;*/
+    background: #0F1C26;
+    color: #FDFDFD;
+    /*display: flex;
+    justify-content: space-between;*/
+}
+
+/*conteúdo do cabeçalho da página*/
+.cabecalhoConteudo {
+    width: 1440px;
+    height: 104px;
+    
+    margin-right: auto;
+    margin-left: auto;       
+
+    border: solid red;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+/*links do cabeçalho da página*/
+.cabecalho a {
+    color: #FDFDFD;
+    text-decoration: none;
+    padding: 0 7em 0 0.5em;
+}
+
+/* estilo dos links do cabeçalho da página*/
+.cabecalho a:hover {
+    text-decoration: underline;
+}
+
+/*Logo do cabeçalho da página*/
+.cabecalhoLogo {
+    max-height: 72px;
+    padding: 0 0 0 20px;
+}
+
+/*barra de pesquisa do cabeçalho da página*/    
+.pesquisa {
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+
+    margin-right:auto;
+    max-height: 56px;
+    padding: 16px 0;
+    background: #171B1E;
+}
+
+/*input de pesquisa do cabeçalho da página*/
+.inputPesquisa {
+    display: flex;
+    flex-basis: auto;
+    max-height: 56px;
+    padding: 0 10px;
+    background: #171B1E;
+    color: #FDFDFD; 
+    border: 0 none;
+    outline: 0;
+}
+
+/*estilo do input de pesquisa do cabeçalho da página*/
+::-webkit-input-placeholder {
+    color: #FDFDFD;
+    font: 16px Marope, normal, sans-serif;
+}
+
+/*usuário do cabeçalho da página*/
+.usuario {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px red;
+    margin-right: 20px;
+}
+/* texto do usuário do cabeçalho da página*/    
+.usuario > p{
+    border: solid 1px red;
+    padding: 0 0.5em 0 0.5em; 
+}
+
+/* imagem do usuário do cabeçalho da página*/      
+.imgUsuario{
+    height: 56px;
+    width: 56px;
+}
+
+/*Principal dos filmes*/        
+.principal{
+    /*border: solid red;*/
+    width: 1300px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+/*conteúdo principal dos filmes*/    
+.conteudoPrincipal{
+    /*border: solid red;*/
+    width: 937px;
+    font-family: 'Quantico', sans-serif;
+}
+
+
+/*Cupom do conteúdo principal dos filmes*/
+.promocaoCupom{
+    width: 937px;
+    height: 119px;
+    font-family: 'Quantico', sans-serif;
+    background-image: url("icones/Promo.svg"); /*tranforma imagem em plano de fundo */
+    background-size: cover;
+    background-position: right;
+}
+    
+.promocaoTitulo h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px
+}
+
+/*.cupom {
+
+}*/
+
+/* LINHA EM PÉ DA BARA CUPOM
+opacity: 0.2;
+border: 1px solid #F294D8;
+transform: rotate(90deg);*/
+
+
+/*sacola lateral*/    
+.barraSacola {
+    font-family: 'Manrope', sans-serif;
+    border: solid blue;
+    width: 312px;  
+}
+
+/*cabeçalho da sacola lateral*/    
+.cabecalhoSacola {
+    margin: 0;
+    padding: 15px;    
+    background: linear-gradient(0deg, #A785ED, #A785ED), #C4C4C4; 
+    width: 312px;  
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*links do cabeçalho da sacola lateral*/    
+.cabecalhoSacola a {
+    font-size: 24px;
+    color: #FDFDFD;
+    text-decoration: none;
+    padding: 0 0 0 0.5em;
+}
+
+/*estilo dos links da sacola lateral*/    
+.cabecalhoSacola a:hover {
+    text-decoration: underline;
+}
+ 
+/*conteúdo da sacola lateral*/    
+.conteudoSacola {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    color: #FDFDFD;
+    background: rgba(0, 0, 0, 0.2);
+    /*display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;*/
+}
+
+/*título do conteúdo da sacola lateral*/    
+.conteudoSacola h2 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+/*rodapé da sacola lateral*/    
+.rodapeCupom {
+    background: #171B1E;
+    padding: 5px;
+    margin: 0 0 20px 0;
+}
+
+/*texto do rodapé da sacola lateral*/    
+.rodapeSacola p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/*input do rodapé da sacola lateral*/    
+.inputRodapeCupom {
+    background: #171B1E;
+    color: #FDFDFD;
+    opacity: 0.4;
+    border: 0 none;
+    outline: 0;
+}
+
+/*ingrsso do input do rodapé da sacola lateral*/    
+.imgInputRodapeCupom {
+    padding: 0 5px 0 0;
+}
+
+/*estilo do input do rodapé da sacola lateral*/    
+.rodapeSacola ::-webkit-input-placeholder {
+    color: #FDFDFD;
+    font: 16px Marope, normal, sans-serif;
+}
+

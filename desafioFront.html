@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estiloDesafio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope&display=swap">
+    <link rel="stylesheet" href= "https://fonts.googleapis.com/css2?family=Quantico&display=swap">    
+    
+    <title>FilmOn</title>
+</head>
+<body>
+    <!--------------------------cabeçalho----------------------------------->
+    <div class="cabecalho">
+        <div class="cabecalhoConteudo">
+            <img class="cabecalhoLogo" src="icones/Logo.svg" alt="">
+            
+            <div class="pesquisa">
+                <input class="inputPesquisa" type="text" name="nome" size="60" value="" placeholder="Pesquise filmes..." />
+                <input class="inputImagem" type="image" src="icones/Pesquisar.svg" />                   
+            </div>
+            
+            <div class="links">
+                <img src="icones/Favoritos.svg" alt="">
+                <a href="#">Favoritos</a>
+               
+                <img src="icones/Promocoes.svg" alt="">
+                <a href="#">Promoções</a>
+            </div>
+                
+            <div class="usuario">
+                <p>Bem-vindo, Usuário</p>
+                <img class="imgUsuario" src="icones/Eu.jpg" alt="">
+            </div>
+        </div>
+    </div>     <!--------------------------Fim do cabeçalho----------------------------------->
+
+    <!-------------------------------------------Conteúdo principal-------------------------------------------->
+    <div class="principal">
+        <div class="conteudoPrincipal">
+            
+            <div class="promocaoCupom">
+                    <div class="promocaoTitulo">
+                    <h1>APROVEITE AGORA</h1>
+                </div>
+                    <div class="cupom">
+                    <img src="icones/IconePromocao.svg" alt="">
+                    <p>CUPOM: </p>
+                </div>
+                <div class="relogio">
+                    <p>FINALIZA EM:</p>
+                    <img src="icones/IconeTempo.svg" alt="">
+                </div>
+            </div>
+        </div> <!-------------------------------------------Conteúdo principal-------------------------------------------->
+        
+         <!-------------------------------------------Sacola Lateral-------------------------------------------->
+        <div class="barraSacola">
+            <div class="cabecalhoSacola">
+                <img src="icones/IconeSacola.svg" alt="">
+                <a href="#">Sacola</a>
+            </div>
+            
+            <div class="conteudoSacola">
+                
+                    <h2>Sua Sacola está Vazia</h2>
+                    <p>Adicione filmes agora</p>
+                                
+                    <img src="icones/Boneco.svg" alt=""> 
+                  
+                    <div class="rodapeSacola">
+                        <p>Insira seu cupom</p>
+                        <div class="rodapeCupom">
+                            <input class="inputRodapeCupom" type="text" name="nome" size="30" value="" placeholder="cupom de desconto" />
+                            <img class="imgInputRodapeCupom" src="icones/Ingresso.svg" alt="">
+                        </div>                    
+                    </div>
+                </div>
+            </div><!------------------------------------------- Fim da Sacola Lateral-------------------------------------------->
+</body>
+<script src="desafioFront.js"></script>
+</html> 

@@ -1,0 +1,65 @@
+<!-- 
+    <div class="cupom">inserir card de desconto</div> -->>
+
+    
+    <div class="conteudo">
+        
+        <div class="topFilmes">
+            
+            <div class="cabecalhoTopFilmes"></div>
+
+            <div class="cardsTopFilmes"> <!-- talves não seja necessário criar os iten dos cards no HTML-->
+                <div class="estrelaTopFavorito"></div>
+                <div class="imagemTop">inserir imagem do filme. Atenção: não esquecer, no HTML são 4 cards para replicar</div>
+                <div class="nomeTopFilme"></div>
+                <div class="classificacaoTopFilme"></div>
+                <div class="sacola"></div>
+            </div>
+        </div>
+        
+<!--
+        <div class="filmes">
+
+            <div class="cabecalhoFilmes"></div>
+
+            <div class="categorias">
+                <div>Ação</div>
+                <div>Todos</div>
+                <div>Romance</div>
+                <div>Ficção Científica</div>
+                <div>Terror</div>
+            </div>
+    
+            <div class="cardFilmes">
+                <div class="imagem">inserir imagem do filme. Atenção: não esquecer, no HTML são 4 cards para replicar</div>
+                <div class="nomeDoFilme"></div>
+                <div class="classificacao"></div>
+                <div class="sacola"></div>
+            </div>
+        </div>
+    
+    </div> -->>
+<!--
+    <div class="barraSacola">
+        <div class="cabecalhoSacola">
+            <div class="logoSacola"> 
+                <img src="inserir imagem" alt="">
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <div>
+                <h1>Sua Sacola está Vazia</h2>
+                <p>Adicione filmes agora</p>
+            </div>
+            <div class="imgSacola">
+                <img src="inserir imagem" alt=""> 
+            </div> 
+            
+            <div class="rodape">
+                <p>Insira seu cupom</p>
+                <input type="cupom de desconto">
+                <img src="inserir imagem" alt="">
+            </div>
+        </div> -->
+        
