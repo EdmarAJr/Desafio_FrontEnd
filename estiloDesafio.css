@@ -6,40 +6,50 @@
 /*body da página*/
 body {
     margin: 0;
-    background:#333333;
+    position: absolute;
+    top: 0;
+    right: 0;
     
+    background:#333333;
 }
 
 /*cabeçalho da página*/
 .cabecalho {
     font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    /*margin: 0 0 0 67px;*/
+    font-size: 1em; /*equivale a 16px*/
+    
     background: #0F1C26;
     color: #FDFDFD;
+    /*margin: 0 0 0 67px;*/
     /*display: flex;
     justify-content: space-between;*/
+    /*position: absolute;
+    top: 0;
+    right: 0;*/
 }
-
+ 
 /*conteúdo do cabeçalho da página*/
 .cabecalhoConteudo {
-    width: 1440px;
-    height: 104px;
+    min-width: 1481px; /* mudei para min-*/ 
+    min-height: 104px; /* mudei para min-*/ 
     
-    margin-right: auto;
-    margin-left: auto;       
-
-    border: solid red;
     display: flex;
     align-items: center;
     justify-content:space-between;
+       
+    border: solid red;
+    
+    /*margin-right: auto;
+    margin-left: auto;*/   
 }
-
+ 
 /*links do cabeçalho da página*/
 .cabecalho a {
+    padding: 0 7em 0 0.5em;
+
     color: #FDFDFD;
     text-decoration: none;
-    padding: 0 7em 0 0.5em;
+    
 }
 
 /* estilo dos links do cabeçalho da página*/
@@ -59,18 +69,21 @@ body {
     flex-basis: auto;
     align-items: center;
 
-    margin-right:auto;
+    margin-right:auto; /*rever quando possível*/
     max-height: 56px;
     padding: 16px 0;
+    
     background: #171B1E;
 }
 
 /*input de pesquisa do cabeçalho da página*/
 .inputPesquisa {
-    display: flex;
-    flex-basis: auto;
     max-height: 56px;
     padding: 0 10px;
+    
+    display: flex;
+    flex-basis: auto;
+    
     background: #171B1E;
     color: #FDFDFD; 
     border: 0 none;
@@ -79,16 +92,19 @@ body {
 
 /*estilo do input de pesquisa do cabeçalho da página*/
 ::-webkit-input-placeholder {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em; /*equivale a 16px*/
+    
     color: #FDFDFD;
-    font: 16px Marope, normal, sans-serif;
 }
 
 /*usuário do cabeçalho da página*/
 .usuario {
     display: flex;
     justify-content: space-between;
+    margin-right: 40px;
+    
     border: solid 1px red;
-    margin-right: 20px;
 }
 /* texto do usuário do cabeçalho da página*/    
 .usuario > p{
@@ -104,76 +120,194 @@ body {
 
 /*Principal dos filmes*/        
 .principal{
-    /*border: solid red;*/
-    width: 1300px;
-    
-    margin-right: auto;
+    max-width: 1320px; /* mudei para max-*/ 
     margin-left: auto;
-    margin-top: 40px;
+    margin-top: 24px;
     
     display: flex;
     justify-content: space-between;
+    
+    border: solid red;
+    /*margin-right: auto;*/
+    /*position: staatic;
+    right: 0;
+    top: 0;*/
 }
 
 /*conteúdo principal dos filmes*/    
 .conteudoPrincipal{
-    /*border: solid red;*/
-    width: 937px;
+    max-width: 937px; /* mudei para max-*/ 
     font-family: 'Quantico', sans-serif;
+    
+    border: solid palevioletred;
 }
 
-
-/*Cupom do conteúdo principal dos filmes*/
-.promocaoCupom{
-    width: 937px;
+/*card promoção (principal dos filmes)*/
+.cardPromocao{
     height: 119px;
+    width: 936px;
+    display: flex;
+    align-items: center;
+        
+    position: relative;
+    
     font-family: 'Quantico', sans-serif;
-    background-image: url("icones/Promo.svg"); /*tranforma imagem em plano de fundo */
+    
+    background-image: url("icones/BarraPromocoes.svg"); /*tranforma imagem em plano de fundo */
     background-size: cover;
     background-position: right;
+    border: solid steelblue;
+}
+
+/*conteúdo do card Promoção (principal dos filmes)*/
+.conteudoPromocao {
+    width: 553px;
+    height: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12px;
 }
     
-.promocaoTitulo h1 {
-    padding: 0;
-    margin: 0;
-    font-size: 40px
+/*imagem conteúdo do card Promoção (principal dos filmes)*/
+.dinheiroPromocao {
+    position: absolute;
+    right: 0.05%;
+    bottom: 0%;
+    
+    height: 173px;
+    width: 293px;
+    
+    border: solid green;
 }
 
-/*.cupom {
+/*div conteúdo do título do card Promoção (principal dos filmes)*/
+.tituloPromocao {
+    height: 60px;
+    width: 355px;
+    padding: 0;   
+}
 
-}*/
+/*título do card Promoção (principal dos filmes)*/
+.tituloPromocao h2 {
+    margin: 0;
+    padding: 0;
+    color: #0F0915;
+    font-size: 2.5em; /*equivale a 40px*/
+}
 
-/* LINHA EM PÉ DA BARA CUPOM
-opacity: 0.2;
-border: 1px solid #F294D8;
-transform: rotate(90deg);*/
+/*cupom do card Promoção (principal dos filmes)*/
+.cupomPromocao {
+    height: 32px; 
+    width: 292px;
+    margin: 0;
+    padding: 0px;
+    
+    display: flex;
+}
 
+/*texto cupom do card Promoção (principal dos filmes)*/
+.cupomPromocao p {
+    margin: 0;
+    padding: 0;
+}
+
+/*divisória do card Promoção (principal dos filmes)*/
+.linhaVertical {
+    width: 2px;
+    background-color:#F294D8;
+    height: 46px; 
+    opacity: 0.2;
+}
+
+/*div timer do card Promoção (principal dos filmes)*/
+  .relogio {
+    padding: 0;
+}
+
+/*texto do timer do card Promoção (principal dos filmes)*/
+.relogio h3 {
+    margin-bottom: 10px;
+    height: 36px;
+    font-size: 24px;
+    color: #0F0915;
+    
+    border: solid black;
+}
+
+/*timer do card Promoção (principal dos filmes)*/
+.contagem {
+    height: 32px;
+}
+
+/*div Top Filmes (principal dos filmes)*/
+.topFilmes{
+    display: flex;
+    flex-direction: column;
+    width: 937px;
+    position: static;
+    font-family: 'Manrope', sans-serif;
+    color: #FDFDFD;
+    
+    border: solid yellow;
+}
+
+/*link Top Filmes (principal dos filmes)*/
+.topFilmes a {
+    font-size: 1.5em; /*equivale a 24px*/
+    font-weight: bold;
+
+    text-decoration: none;
+    color: #FDFDFD;
+}
+/*estilo dos links Top Filmes (principal dos filmes)*/
+.topFilmesalho a:hover {
+    text-decoration: underline;
+}
+/*div card filmes*/
+.cardsTopFilmes {
+    height: 168;
+    width: 301;
+    border: solid tomato;
+}
+
+.sacolaTopFilmes {
+    background: #A785ED;
+}
 
 /*sacola lateral*/    
 .barraSacola {
+    margin: 0 24px 0 0;
+
     font-family: 'Manrope', sans-serif;
-    border: solid blue;
     width: 312px;  
+    
+    border: solid blue;
 }
 
 /*cabeçalho da sacola lateral*/    
 .cabecalhoSacola {
     margin: 0;
     padding: 15px;    
-    background: linear-gradient(0deg, #A785ED, #A785ED), #C4C4C4; 
-    width: 312px;  
+    width: 311px;  
+   
     display: flex;
     justify-items: center;
     justify-content: center;
     text-align: center;
+    
+    background: linear-gradient(0deg, #A785ED, #A785ED), #C4C4C4; 
 }
 
 /*links do cabeçalho da sacola lateral*/    
 .cabecalhoSacola a {
-    font-size: 24px;
+    padding: 0 0 0 0.5em;
+    
+    font-size: 1.5em; /*equivale a 24px*/
+    font-weight: bold;
+    
     color: #FDFDFD;
     text-decoration: none;
-    padding: 0 0 0 0.5em;
 }
 
 /*estilo dos links da sacola lateral*/    
@@ -184,12 +318,13 @@ transform: rotate(90deg);*/
 /*conteúdo da sacola lateral*/    
 .conteudoSacola {
     margin: 0;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
-    color: #FDFDFD;
     background: rgba(0, 0, 0, 0.2);
+    color: #FDFDFD;
     /*display: flex;
     justify-items: center;
     justify-content: center;
@@ -205,16 +340,18 @@ transform: rotate(90deg);*/
 
 /*rodapé da sacola lateral*/    
 .rodapeCupom {
-    background: #171B1E;
-    padding: 5px;
     margin: 0 0 20px 0;
+    padding: 5px;
+    
+    background: #171B1E;
 }
 
 /*texto do rodapé da sacola lateral*/    
 .rodapeSacola p {
-    font-size: 10px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    
+    font-size: 0.625em; /*equivale a 10px*/
 }
 
 /*input do rodapé da sacola lateral*/    
@@ -233,7 +370,8 @@ transform: rotate(90deg);*/
 
 /*estilo do input do rodapé da sacola lateral*/    
 .rodapeSacola ::-webkit-input-placeholder {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
     color: #FDFDFD;
-    font: 16px Marope, normal, sans-serif;
 }
 
