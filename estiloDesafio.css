@@ -36,9 +36,7 @@ body {
     display: flex;
     align-items: center;
     justify-content:space-between;
-       
-    border: solid red;
-    
+ 
     /*margin-right: auto;
     margin-left: auto;*/   
 }
@@ -102,13 +100,10 @@ body {
 .usuario {
     display: flex;
     justify-content: space-between;
-    margin-right: 40px;
-    
-    border: solid 1px red;
+    margin-right: 40px;  
 }
 /* texto do usuário do cabeçalho da página*/    
 .usuario > p{
-    border: solid 1px red;
     padding: 0 0.5em 0 0.5em; 
 }
 
@@ -126,8 +121,7 @@ body {
     
     display: flex;
     justify-content: space-between;
-    
-    border: solid red;
+       
     /*margin-right: auto;*/
     /*position: staatic;
     right: 0;
@@ -136,10 +130,8 @@ body {
 
 /*conteúdo principal dos filmes*/    
 .conteudoPrincipal{
-    max-width: 937px; /* mudei para max-*/ 
+    max-width: 940px; /* mudei para max-*/ 
     font-family: 'Quantico', sans-serif;
-    
-    border: solid palevioletred;
 }
 
 /*card promoção (principal dos filmes)*/
@@ -156,7 +148,6 @@ body {
     background-image: url("icones/BarraPromocoes.svg"); /*tranforma imagem em plano de fundo */
     background-size: cover;
     background-position: right;
-    border: solid steelblue;
 }
 
 /*conteúdo do card Promoção (principal dos filmes)*/
@@ -177,8 +168,6 @@ body {
     
     height: 173px;
     width: 293px;
-    
-    border: solid green;
 }
 
 /*div conteúdo do título do card Promoção (principal dos filmes)*/
@@ -232,7 +221,7 @@ body {
     font-size: 24px;
     color: #0F0915;
     
-    border: solid black;
+    border: 1px solid black;
 }
 
 /*timer do card Promoção (principal dos filmes)*/
@@ -240,39 +229,141 @@ body {
     height: 32px;
 }
 
-/*div Top Filmes (principal dos filmes)*/
-.topFilmes{
-    display: flex;
-    flex-direction: column;
-    width: 937px;
-    position: static;
+/*ul Top Filmes (principal dos filmes)*/
+
+.filmesConteudo {
+    margin: 0;
+    padding: 0;
+    
     font-family: 'Manrope', sans-serif;
     color: #FDFDFD;
     
-    border: solid yellow;
+    list-style-type: none;
 }
 
-/*link Top Filmes (principal dos filmes)*/
-.topFilmes a {
-    font-size: 1.5em; /*equivale a 24px*/
+.topFilmes, .filmesPrincipal {
+    padding: 16px 0;
+    margin: -12px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topFilmes li, .filmesPrincipal li {
+    position: relative;
+    margin: 12px;
+    height: 301px;
+    width: 168px;
+    padding: 0;
+}
+
+li> img {
+    margin: 0;
+    height: 301px;
+    width: 168px;
+    object-fit: cover; 
+    display: block;
+    filter: brightness(50%);
+}
+
+
+.sacola {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    padding: 12px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+li button {
+    font-family: 'Manrope', sans-serif;
     font-weight: bold;
-
-    text-decoration: none;
     color: #FDFDFD;
-}
-/*estilo dos links Top Filmes (principal dos filmes)*/
-.topFilmesalho a:hover {
-    text-decoration: underline;
-}
-/*div card filmes*/
-.cardsTopFilmes {
-    height: 168;
-    width: 301;
-    border: solid tomato;
+    
+    height: 26px;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    border: none;
+    background: #A785ED;
 }
 
-.sacolaTopFilmes {
-    background: #A785ED;
+.estrelaFavorito {
+    position: absolute;
+    top:0;
+    left: 0;
+    
+    margin: 10px;
+    width: 16px;
+    height: 16px;
+
+    object-fit: cover;  
+}
+
+.nomedoFilmeRodape {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    right: 0;
+    
+    margin-bottom: 40px;
+    padding: 0 10px 0 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nomedoFilmeRodape h5{
+    margin: 0;
+}
+
+.estrelaDaNota {
+    height: 8px;
+    width: 8px;
+   
+    
+}
+.notaDoFilme {
+    display: flex;
+    align-items: center;
+}
+
+.notaDoFilme span{
+    font-size: 12px;  
+    font-weight: bold;
+    color: #FBCD6E;
+}
+
+.botoesGenero {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.botoesGenero button {
+    width: 168px;
+    height: 38px;
+   
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    
+    background: none;
+    border: 2px solid #FFFFFF;
+    opacity: 0.4;    
+}
+
+.botoesGenero button:hover{
+    background-color:rgba(225, 131, 200, 0.2);
+    border: 2px solid #E183C8;;
 }
 
 /*sacola lateral*/    
@@ -281,8 +372,6 @@ body {
 
     font-family: 'Manrope', sans-serif;
     width: 312px;  
-    
-    border: solid blue;
 }
 
 /*cabeçalho da sacola lateral*/    
